@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Card</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<meta http-equiv="Page-Enter" content="RevealTrans (Duration=3,Transition=23)">
+	<meta http-equiv="Page-Exit" content="RevealTrans (Duration=2,Transition=23)">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		    $(".but").click(function(){
+		        $(".backcard").fadeToggle("slow");
+		    });
+		});
+		</script>
+		<script>
+		$(document).ready(function(){
+		    $(".manage").click(function(){
+		        $(".managebox").fadeToggle("slow");
+		    });
+		});
+		</script>
+</head>
+<body>
+<div class="allwrap">
+	<div class="wrapper">
+		<div class="head">My Card</div>
+		<div class="reward"><p2>Green Level</p2><br><p3>STARS YOU'VE EARNED</p3><br><p4>Your membership expiry date is 2017-03-29,<br>49 more Stars to reach Gold level.</p4>
+		<a href="reward.html"><input type="submit" class="butreward" value="Rewards"></a>
+		</div>
+		<div class="box">
+		Bath 250.00<br><p3>As of 2560-02-22 19:43</p3><br><br>
+		<input type="submit" class="manage" value="Manage">
+		<a href="newcard.html"><input type="submit" class="addcard" value="Add a Card"></a>	
+		</div>
+		<div class="menu">
+			<ul>
+				<li class="menu2"><img src="img/menu1.png"><br>HOME</li>
+				<li class="menu2" id="active"><img src="img/menu2.png"><br>CARD</li>
+				<li class="menu2"><img src="img/menu3.png"><br>STORES</li>
+				<li class="menu2"><img src="img/menu4.png"><br>MESSAGES</li>
+				<li class="menu2"><img src="img/menu5.png"><br>MORE</li>
+			</ul>
+		</div>
+	</div>
+	<div class="wrapcard">
+				<div class="card"></div>
+				<div class="backcard">
+					Your Starbucks Card number is:<br><br>6080152441596222<br><br>
+					<img src="img/bar.png" style="width:200px;">
+				</div>
+				<div class="card2"></div>
+				<div class="but">Touch<br>here</div>
+		</div>
+		<div class="managebox">
+			<a href="mycard.html" class="not"><div class="refresh">Refresh Balance</div></a>
+			<a href="history.html" class="not"><div class="history">Transaction History</div>
+			<a href="mycard.html" class="not"><div class="cancel">Cancel</div></a>
+		</div>
+		</div>
+</body>
+</html>
